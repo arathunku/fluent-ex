@@ -1,0 +1,45 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "NOTE: Disable final newline insertion when editing this file."
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "no-eol"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "No EOL"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

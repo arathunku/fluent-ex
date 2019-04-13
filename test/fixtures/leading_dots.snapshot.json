@@ -1,0 +1,885 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key01"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": ".Value"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key02"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "…Value"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key03"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "."
+                  }
+                ]
+              },
+              {
+                "key": "text_element",
+                "value": "Value"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key04"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "."
+                  }
+                ]
+              },
+              {
+                "key": "text_element",
+                "value": "Value"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key05"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "Value"
+              },
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "."
+                  }
+                ]
+              },
+              {
+                "key": "text_element",
+                "value": "Continued"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key06"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": ".Value"
+              },
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "."
+                  }
+                ]
+              },
+              {
+                "key": "text_element",
+                "value": "Continued"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "MESSAGE (value = \"Value\", attributes = [])\nJUNK (attr .Continued\" must have a value)"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 88
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key07"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "Value"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    .Continued\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK (attr .Value must have a value)"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 38
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "key08 =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    .Value\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK (attr .Value must have a value)"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 38
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "key09 =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    .Value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    Continued\n"
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key10"
+          },
+          {
+            "key": "attribute",
+            "value": [
+              {
+                "key": "id",
+                "value": "Value"
+              },
+              {
+                "key": "pattern",
+                "value": [
+                  {
+                    "key": "text_element",
+                    "value": "which is an attribute\nContinued"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key11"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "."
+                  }
+                ]
+              },
+              {
+                "key": "text_element",
+                "value": "Value = which looks like an attribute\nContinued"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key12"
+          },
+          {
+            "key": "attribute",
+            "value": [
+              {
+                "key": "id",
+                "value": "accesskey"
+              },
+              {
+                "key": "pattern",
+                "value": [
+                  {
+                    "key": "text_element",
+                    "value": "\nA"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key13"
+          },
+          {
+            "key": "attribute",
+            "value": [
+              {
+                "key": "id",
+                "value": "attribute"
+              },
+              {
+                "key": "pattern",
+                "value": [
+                  {
+                    "key": "text_element",
+                    "value": ".Value"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key14"
+          },
+          {
+            "key": "attribute",
+            "value": [
+              {
+                "key": "id",
+                "value": "attribute"
+              },
+              {
+                "key": "pattern",
+                "value": [
+                  {
+                    "key": "placeable",
+                    "value": [
+                      {
+                        "value": "string_literal"
+                      },
+                      {
+                        "value": "."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "text_element",
+                    "value": "Value"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key15"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "value": [
+                          {
+                            "value": "int_value"
+                          },
+                          {
+                            "key": 2,
+                            "value": 7
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "key": "variant",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "one"
+                              },
+                              {
+                                "key": "pattern",
+                                "value": [
+                                  {
+                                    "key": "text_element",
+                                    "value": ".Value"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 5,
+                                "value": 21
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "other"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "placeable",
+                                        "value": [
+                                          {
+                                            "value": "string_literal"
+                                          },
+                                          {
+                                            "value": "."
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "key": "text_element",
+                                        "value": "Value"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK (variant must have a value)"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 34
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "key16 =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    { 1 ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "       *[one]\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "           .Value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    }\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK (unclosed placeable)"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 27
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "key17 =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    { 1 ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "       *[one] Value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "           .Continued\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    }\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK (attr .Value must have a value)"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 38
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "key18 =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": ".Value\n"
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key19"
+          },
+          {
+            "key": "attribute",
+            "value": [
+              {
+                "key": "id",
+                "value": "attribute"
+              },
+              {
+                "key": "pattern",
+                "value": [
+                  {
+                    "key": "text_element",
+                    "value": "Value\nContinued"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key20"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "."
+                  }
+                ]
+              },
+              {
+                "key": "text_element",
+                "value": "Value"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

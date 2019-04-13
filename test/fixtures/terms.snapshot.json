@@ -1,0 +1,270 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "term",
+        "value": [
+          {
+            "key": "id",
+            "value": "term01"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "Value"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    .attr = Attribute\n"
+          }
+        ]
+      },
+      {
+        "key": "term",
+        "value": [
+          {
+            "key": "id",
+            "value": "term02"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK Missing value"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "-term03 =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    .attr = Attribute\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK Missing value\n       <  whitespace  >"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 46
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "-term04 =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    .attr1 = Attribute 1\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK Missing value"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "-term05 =\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK Missing value\n       <  whitespace  >"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 46
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "-term06 =\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK Missing ="
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "-term07\n"
+          }
+        ]
+      }
+    ]
+  }
+]

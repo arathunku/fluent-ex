@@ -1,0 +1,555 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "simple-identifier"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "variable_reference",
+                        "value": [
+                          {
+                            "value": "id"
+                          },
+                          {
+                            "value": "sel"
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 3,
+                                "value": 18
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "key"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "text_element",
+                                        "value": "value"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "identifier-surrounded-by-whitespace"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "variable_reference",
+                        "value": [
+                          {
+                            "value": "id"
+                          },
+                          {
+                            "value": "sel"
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 3,
+                                "value": 28
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "key"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "text_element",
+                                        "value": "value"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "int-number"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "variable_reference",
+                        "value": [
+                          {
+                            "value": "id"
+                          },
+                          {
+                            "value": "sel"
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 3,
+                                "value": 16
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": [
+                                      {
+                                        "value": "int_value"
+                                      },
+                                      {
+                                        "key": 3,
+                                        "value": 10
+                                      },
+                                      {
+                                        "value": [
+                                          {
+                                            "value": 1
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "text_element",
+                                        "value": "value"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "float-number"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "variable_reference",
+                        "value": [
+                          {
+                            "value": "id"
+                          },
+                          {
+                            "value": "sel"
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 3,
+                                "value": 19
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": [
+                                      {
+                                        "value": "float_value"
+                                      },
+                                      {
+                                        "key": 3,
+                                        "value": 13
+                                      },
+                                      {
+                                        "value": [
+                                          {
+                                            "value": 3.14
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "text_element",
+                                        "value": "value"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "invalid-identifier =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    { $sel ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "       *[two words] value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    }\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "invalid-int =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    { $sel ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "       *[1 apple] value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    }\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "invalid-int =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    { $sel ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "       *[3.14 apples] value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    }\n"
+          }
+        ]
+      }
+    ]
+  }
+]

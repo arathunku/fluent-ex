@@ -13,8 +13,28 @@ def deps do
 end
 ```
 
+# AST not stable, possible breaking changes
+
+
+# Tests
+
+`ftl` files are taken from official Fluent spec.
+Elixir NimbleParser AST is snapshotted into separate files.
+There's basic JsonEncoder but preferably, AST output would match official
+json structure after transformation.
+
+```bash
+$ mix test
+
+# if you'd like to update snapshots
+$ UPDATE=true mix test
+```
 
 # TODO:
 
-  - [ ] errors annotation
-  - Fluent.Bundle (adding languages, fetching translations, etc.)
+  - [ ] better errors - is there any way to avoid exceptions?
+  - [ ] running expressions on fetch
+  - [ ] Fluent.Bundle (adding languages, fetching translations, etc.)
+  - [ ] Correct spans and locations in AST
+  - [ ] Multiple comment types based on `###`
+  - [ ] output json for AST matching tests in [fluent](https://github.com/projectfluent/fluent)

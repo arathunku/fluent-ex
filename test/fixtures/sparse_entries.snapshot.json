@@ -1,0 +1,201 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key01"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "\n\n\nValue"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key02"
+          },
+          {
+            "key": "attribute",
+            "value": [
+              {
+                "key": "id",
+                "value": "attr"
+              },
+              {
+                "key": "pattern",
+                "value": [
+                  {
+                    "key": "text_element",
+                    "value": "Attribute"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key03"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "\nValue\nContinued\n\n\nOver multiple\nLines"
+              }
+            ]
+          },
+          {
+            "key": "attribute",
+            "value": [
+              {
+                "key": "id",
+                "value": "attr"
+              },
+              {
+                "key": "pattern",
+                "value": [
+                  {
+                    "key": "text_element",
+                    "value": "Attribute"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key05"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "Value"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key06"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "value": [
+                          {
+                            "value": "int_value"
+                          },
+                          {
+                            "key": 1,
+                            "value": 11
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "key": "variant",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "one"
+                              },
+                              {
+                                "key": "pattern",
+                                "value": [
+                                  {
+                                    "key": "text_element",
+                                    "value": "One"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 9,
+                                "value": 17
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "two"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "text_element",
+                                        "value": "Two"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

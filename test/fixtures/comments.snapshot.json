@@ -1,0 +1,123 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Standalone Comment"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Message Comment"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 17
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "foo"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "Foo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Term Comment\nwith a blank last line.\n"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 42
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "term",
+        "value": [
+          {
+            "key": "id",
+            "value": "term"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "Term"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Another standalone\n\n     with indent\nGroup Comment\nResource Comment"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 79
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

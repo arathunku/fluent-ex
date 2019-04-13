@@ -1,0 +1,307 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "The syntax in this file has been discontinued. It is no longer part of the\nFluent specification and should not be implemented nor used. We're keeping\nthese fixtures around to protect against accidental syntax reuse."
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 227
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Variant lists."
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 17
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "message-variant-list =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    {\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "       *[key] Value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    }\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "-term-variant-list =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    {\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "       *[key] Value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    }\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Variant expressions."
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 23
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "message-variant-expression-placeable = {msg[case]}\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "message-variant-expression-selector = {msg[case] ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "   *[key] Value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "}\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "term-variant-expression-placeable = {-term[case]}\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "term-variant-expression-selector = {-term[case] ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "   *[key] Value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "}\n"
+          }
+        ]
+      }
+    ]
+  }
+]

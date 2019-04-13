@@ -1,0 +1,98 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "string-expression"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "abc"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "number-expression"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "int_value"
+                  },
+                  {
+                    "key": 1,
+                    "value": 24
+                  },
+                  {
+                    "value": [
+                      {
+                        "value": 123
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "number-expression"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "float_value"
+                  },
+                  {
+                    "key": 1,
+                    "value": 26
+                  },
+                  {
+                    "value": [
+                      {
+                        "value": -3.14
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

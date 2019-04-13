@@ -1,0 +1,494 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Reference expressions in placeables."
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 39
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "message-reference-placeable"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "message_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "msg"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "term-reference-placeable"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "term_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "term"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "variable-reference-placeable"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "variable_reference"
+                  },
+                  {
+                    "key": "id",
+                    "value": "var"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Function references are invalid outside of call expressions.\nThis parses as a valid MessageReference."
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 105
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "function-reference-placeable"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "message_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Reference expressions in selectors."
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 38
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "variable-reference-selector"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "variable_reference",
+                        "value": [
+                          {
+                            "value": "id"
+                          },
+                          {
+                            "value": "var"
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 2,
+                                "value": 14
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "key"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "text_element",
+                                        "value": "Value"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR Message values may not be used as selectors."
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 52
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "message-reference-selector"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "message_reference",
+                        "value": [
+                          {
+                            "key": "id",
+                            "value": "msg"
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 2,
+                                "value": 14
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "key"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "text_element",
+                                        "value": "Value"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR Term values may not be used as selectors."
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 49
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Terms cannot be used as selectors - [id: \"term\"]\n"
+            }
+          },
+          {
+            "key": "content",
+            "value": "term-reference-selector = {-term ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "   *[key] Value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "}\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR Function references are invalid outside of call expressions, and this\nparses as a MessageReference which isn't a valid selector."
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 138
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "function-expression-selector"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "message_reference",
+                        "value": [
+                          {
+                            "key": "id",
+                            "value": "FUN"
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 2,
+                                "value": 14
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "key"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "text_element",
+                                        "value": "Value"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

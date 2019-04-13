@@ -1,6 +1,7 @@
 defmodule Fluent.Parser do
   import NimbleParsec
-
+  alias Fluent.Parser.Validators
+  require Logger
   @newline 0x000A
   @carriage_return 0x000D
 
@@ -21,12 +22,14 @@ defmodule Fluent.Parser do
       |> optional(ascii_char([@newline]))
       |> replace(@newline)
     ])
+    |> label("line end")
 
   negative_sign = ascii_char([?-])
   sign = ascii_char([?+, ?-])
   digit = ascii_char([?0..?9])
   non_zero_digit = ascii_char([?1..?9])
 
+  # FractionalPart :: . Digit+
   fractional_part =
     ascii_char([?.])
     |> times(digit, min: 1)
@@ -62,27 +65,27 @@ defmodule Fluent.Parser do
     |> map({String, :to_integer, []})
     |> post_traverse({:labeled_token, [:int_value]})
 
-  sign = ascii_char([?+, ?-])
-
-  # FractionalPart :: . Digit+
-  fractional_part =
-    ascii_char([?.])
-    |> times(digit, min: 1)
-
-  blank_inline = times(utf8_char([0x0020]), min: 1)
+  blank_inline_single = utf8_char([0x0020])
+  blank_inline = times(blank_inline_single, min: 1)
 
   comment_line =
     empty()
-    |> ignore(optional(blank_inline))
-    |> times(ignore(string("#")), min: 1)
+    |> post_traverse({:mark_start, []})
+    |> ignore(times(string("#"), min: 1))
+    |> ignore(optional(blank_inline_single))
     |> optional(repeat_while(any_char, {:not_line_terminator, []}))
-    |> concat(optional(line_end))
+    |> reduce({List, :to_string, []})
+    |> post_traverse({:mark_end, []})
+    |> ignore(optional(line_end))
+    |> label("comment line")
+    |> tag(:comment_line)
 
   comment =
-    times(comment_line, min: 1)
-    |> reduce({List, :to_string, []})
-    |> map({String, :trim, []})
-    |> tag(:comment)
+    empty()
+    |> times(comment_line, min: 1)
+    |> reduce({:post_process_comments, []})
+    |> unwrap_and_tag(:comment)
+    |> label("comment")
 
   text_char =
     empty()
@@ -140,9 +143,7 @@ defmodule Fluent.Parser do
 
   inline_text =
     empty()
-    # |> traverse({:mark_string_start, []})
     |> times(text_char, min: 1)
-    # |> traverse({:string_value_token, []})
     |> reduce({List, :to_string, []})
     |> tag(:text_element)
 
@@ -183,36 +184,47 @@ defmodule Fluent.Parser do
     |> concat(identifier)
     |> parsec(:call_arguments)
     |> tag(:function_reference)
+    |> post_traverse({Validators, :validate_function_name_all_caps, []})
+    |> post_traverse({Validators, :validate_call_argument, []})
 
   message_reference =
     empty()
     |> concat(identifier)
-    |> parsec(:attribute_accessor)
-    |> tag(:messegage_reference)
+    |> optional(parsec(:attribute_accessor))
+    |> tag(:message_reference)
+    |> label("message reference")
 
   defcombinatorp(
     :attribute_accessor,
     empty()
     |> ignore(string("."))
     |> concat(identifier)
+    |> tag(:attribute_accessor)
+    |> label("attribute accessor")
   )
 
   named_argument =
     empty()
     |> concat(identifier)
-    |> optional(blank)
-    |> string(":")
-    |> optional(blank)
+    |> ignore(optional(blank))
+    |> ignore(string(":"))
+    |> ignore(optional(blank))
     |> choice([
       string_literal,
       number_literal
     ])
+    |> tag(:named_argument)
 
   argument = choice([named_argument, parsec(:inline_expression)])
 
   argument_list =
     empty()
-    |> repeat(argument |> optional(blank) |> string(",") |> optional(blank))
+    |> repeat(
+      argument
+      |> ignore(optional(blank))
+      |> ignore(string(","))
+      |> ignore(optional(blank))
+    )
     |> optional(argument)
 
   defcombinatorp(
@@ -254,6 +266,7 @@ defmodule Fluent.Parser do
     |> ignore(optional(blank))
     |> ignore(string("}"))
     |> unwrap_and_tag(:placeable)
+    |> label("inline placeable")
   )
 
   defcombinatorp(
@@ -272,8 +285,17 @@ defmodule Fluent.Parser do
       parsec(:inline_placeable),
       parsec(:block_placeable)
     ])
+    |> label("pattern element")
 
-  defcombinatorp(:attribute,
+  pattern =
+    empty
+    |> times(pattern_element, min: 1)
+    |> reduce({__MODULE__, :reduce_pattern, []})
+    |> unwrap_and_tag(:pattern)
+    |> label("pattern")
+
+  defcombinatorp(
+    :attribute,
     empty()
     |> ignore(line_end)
     |> ignore(optional(blank))
@@ -282,16 +304,9 @@ defmodule Fluent.Parser do
     |> ignore(optional(blank_inline))
     |> ignore(string("="))
     |> ignore(optional(blank_inline))
-    |> concat(parsec(:pattern))
+    |> concat(pattern)
     |> tag(:attribute)
-  )
-
-  # Patterns are values of Messages, Terms, Attributes and Variants.
-  defcombinatorp(:pattern,
-    times(pattern_element, min: 1)
-    |> debug()
-    |> reduce({__MODULE__, :reduce_pattern, []})
-    |> unwrap_and_tag(:pattern)
+    |> label("attribute")
   )
 
   message =
@@ -301,12 +316,13 @@ defmodule Fluent.Parser do
     |> ignore(optional(blank_inline))
     |> ignore(string("="))
     |> ignore(optional(blank_inline))
-    |> debug()
-    |> concat(choice([
-      parsec(:pattern) |> repeat(parsec(:attribute)),
+    |> choice([
+      pattern
+      |> repeat(parsec(:attribute)),
       times(parsec(:attribute), min: 1)
-    ]))
+    ])
     |> reduce({__MODULE__, :flatten, []})
+    |> label("message")
 
   term =
     empty()
@@ -315,7 +331,8 @@ defmodule Fluent.Parser do
     |> ignore(optional(blank_inline))
     |> ignore(string("="))
     |> ignore(optional(blank_inline))
-    |> concat(parsec(:pattern))
+    |> concat(pattern)
+    |> label("term")
 
   variant_key =
     empty()
@@ -327,6 +344,7 @@ defmodule Fluent.Parser do
     ])
     |> ignore(optional(blank))
     |> ignore(string("]"))
+    |> label("variant key")
 
   default_variant =
     empty()
@@ -335,70 +353,39 @@ defmodule Fluent.Parser do
     |> ignore(string("*"))
     |> concat(variant_key)
     |> ignore(optional(blank_inline))
-    |> parsec(:pattern)
+    |> concat(pattern)
     |> traverse({:labeled_token, [:default_value]})
 
   variant =
     empty()
-    |> concat(line_end)
-    |> optional(blank)
+    |> ignore(line_end)
+    |> ignore(optional(blank))
     |> concat(variant_key)
-    |> optional(blank_inline)
-    |> parsec(:pattern)
+    |> ignore(optional(blank_inline))
+    |> concat(pattern)
     |> tag(:variant)
+    |> label("variant")
 
   variant_list =
     empty()
     |> repeat(variant)
     |> concat(default_variant)
     |> repeat(variant)
-    |> concat(line_end)
+    |> ignore(line_end)
+    |> tag(:variant_list)
+    |> label("variant list")
 
-  junk_line =
+  defparsec(:junk_line,
     empty()
     |> times(
       empty()
-      |> lookahead_not(string("\n"))
+      |> lookahead_not(line_end)
       |> concat(any_char),
       min: 1
     )
-    |> choice([
-      line_end,
-      eos()
-    ])
-
-  defcombinatorp(
-    :junk,
-    empty()
-    |> concat(junk_line)
-    |> repeat(
-      empty()
-      |> lookahead_not(ascii_char([?a..?z, ?A..?Z]))
-      |> lookahead_not(ascii_char([?a..?z, ?A..?Z]))
-      |> string("-")
-      |> string("#")
-      |> concat(junk_line)
-    )
+    |> optional(line_end)
     |> reduce({List, :to_string, []})
-    |> tag(:junk)
-  )
-
-  defcombinatorp(
-    :entry,
-    choice([
-      choice([
-        comment |> concat(message) |> ignore(optional(line_end)),
-        empty() |> concat(message) |> ignore(optional(line_end))
-      ])
-      |> tag(:message),
-      choice([
-        comment |> concat(term) |> ignore(optional(line_end)),
-        empty() |> concat(term) |> ignore(optional(line_end))
-      ])
-      |> tag(:term),
-      comment,
-      ignore(line_end)
-    ])
+    |> unwrap_and_tag(:content)
   )
 
   defcombinatorp(
@@ -419,27 +406,92 @@ defmodule Fluent.Parser do
     :select_expression,
     empty()
     |> parsec(:inline_expression)
-    |> optional(blank)
-    |> string("->")
-    |> optional(blank_inline)
+    |> ignore(optional(blank))
+    |> ignore(string("->"))
+    |> ignore(optional(blank_inline))
     |> concat(variant_list)
     |> tag(:select_expression)
+    |> post_traverse({Validators, :validate_select_expression, []})
   )
 
   defparsec(
-    :parse,
+    :junk,
     empty()
-    |> debug()
     |> repeat(
-      choice([
-        parsec(:entry),
-        blank_block,
-        parsec(:junk)
-      ])
+      empty()
+      |> lookahead_not(ascii_char([?a..?z, ?A..?Z]))
+      |> lookahead_not(ascii_char([?a..?z, ?A..?Z]))
+      |> string("-")
+      |> string("#")
+      |> parsec(:junk_line)
     )
-    |> tag(:resource),
+  )
+
+  defparsec(
+    :entry,
+    choice([
+      ignore(line_end),
+      empty
+      |> ignore(optional(line_end))
+      |> choice([
+        message |> unwrap_and_tag(:message),
+        term |> tag(:term),
+        comment
+      ])
+      |> ignore(repeat(line_end))
+    ])
+    |> label("entry"),
     debug: false
   )
+
+  def run(content) do
+    {:ok, resource: run_process_chunk(content, [])}
+  end
+
+  def run_process_chunk("", acc) do
+    Enum.reverse(acc)
+  end
+
+  def run_process_chunk(chunk, acc) do
+    try do
+      entry(chunk)
+    rescue
+      e in [Fluent.Parser.ValidationError] ->
+        {:ok, [content: content], left, _, _, _} = junk_line(chunk)
+
+        {:continue, left, {:junk,
+           [
+             annotation: create_annotation(e),
+             content: content
+           ]} }
+    end
+    |> case do
+      {:continue, left, entry} ->
+        run_process_chunk(left, [entry | acc])
+      {:ok, [], left, _, _, _} ->
+        run_process_chunk(left, acc)
+      {:ok, [entry], left, _, _, _} ->
+        run_process_chunk(left, [entry | acc])
+      {:error, msg, content, _, _, _} = error ->
+        Logger.debug("#{inspect(error)}")
+
+        case junk_line(chunk) do
+          {:ok, [content: ""], left, _, _, _} ->
+            raise ArgumentError, "Junk not found?"
+          {:ok, [content: content], left, _, _, _} ->
+            run_process_chunk(left, [
+              {:junk,
+               [
+                 annotation: create_annotation(%{
+                   message: "Parsing error - #{inspect(msg)}"
+                 }),
+                 content: content
+               ]}
+              | acc
+            ])
+        end
+    end
+  end
 
   def line_and_column({line, line_offset}, byte_offset, column_correction) do
     column = byte_offset - line_offset - column_correction + 1
@@ -465,6 +517,13 @@ defmodule Fluent.Parser do
     |> List.flatten()
   end
 
+  defp mark_start(_rest, content, context, loc, byte_offset) do
+    {[content], Map.put(context, :span_start, byte_offset)}
+  end
+
+  defp mark_end(_rest, content, context, loc, byte_offset) do
+    {[content, {context.span_start, byte_offset}], Map.delete(context, :span_start)}
+  end
   def reduce_pattern(list) do
     list
     |> List.flatten()
@@ -520,4 +579,32 @@ defmodule Fluent.Parser do
   end
 
   defp fill_mantissa(_rest, raw, context, _, _), do: {'0.' ++ raw, context}
+
+
+  def create_annotation(%{message: message}) do
+    %{
+      message: message
+    }
+  end
+
+  def post_process_comments(comments) do
+    values = Keyword.get_values(comments, :comment_line)
+    content =
+      values
+      |> Enum.map(fn [_, content] -> content end)
+      |> List.flatten()
+      |> Enum.join("\n")
+    [[{first, _}, _] | _] = values
+    [{_, last}, _] = List.last(values)
+
+    [content: content, span: {first, last}]
+  end
+
+  def trim_leading(str) do
+    str
+  end
+
+  def raise_error(_, _, _, _, _) do
+    raise ArgumentError, "check"
+  end
 end

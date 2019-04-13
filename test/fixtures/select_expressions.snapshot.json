@@ -1,0 +1,703 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "new-messages"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "function_reference",
+                        "value": [
+                          {
+                            "key": "id",
+                            "value": "BUILTIN"
+                          },
+                          {
+                            "key": "call_arguments",
+                            "value": []
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "key": "variant",
+                            "value": [
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 3,
+                                    "value": 10
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "key": "pattern",
+                                "value": [
+                                  {
+                                    "key": "text_element",
+                                    "value": "Zero"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 4,
+                                "value": 24
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "other"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "placeable",
+                                        "value": [
+                                          {
+                                            "value": "string_literal"
+                                          },
+                                          {
+                                            "value": ""
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "key": "text_element",
+                                        "value": "Other"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "valid-selector-term-attribute"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "term_reference",
+                        "value": [
+                          {
+                            "key": "id",
+                            "value": "term"
+                          },
+                          {
+                            "key": "attribute_accessor",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "case"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 3,
+                                "value": 18
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "key"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "text_element",
+                                        "value": "value"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR Term values are not valid selectors"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 43
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Terms cannot be used as selectors - [id: \"term\"]\n"
+            }
+          },
+          {
+            "key": "content",
+            "value": "invalid-selector-term-value =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    { -term ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "       *[key] value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    }\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR CallExpressions on Terms are similar to TermReferences"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 62
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Terms cannot be used as selectors - [id: \"term\", call_arguments: [named_argument: [id: \"case\", string_literal: \"nominative\"]]]\n"
+            }
+          },
+          {
+            "key": "content",
+            "value": "invalid-selector-term-variant =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    { -term(case: \"nominative\") ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "       *[key] value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    }\n"
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "empty-variant"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "variable_reference",
+                        "value": [
+                          {
+                            "value": "id"
+                          },
+                          {
+                            "value": "sel"
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 3,
+                                "value": 17
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "key"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "placeable",
+                                        "value": [
+                                          {
+                                            "value": "string_literal"
+                                          },
+                                          {
+                                            "value": ""
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "nested-select"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "variable_reference",
+                        "value": [
+                          {
+                            "value": "id"
+                          },
+                          {
+                            "value": "sel"
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 5,
+                                "value": 7
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "one"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "placeable",
+                                        "value": [
+                                          {
+                                            "value": "select_expression"
+                                          },
+                                          {
+                                            "value": [
+                                              {
+                                                "key": "variable_reference",
+                                                "value": [
+                                                  {
+                                                    "value": "id"
+                                                  },
+                                                  {
+                                                    "value": "sel"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "key": "variant_list",
+                                                "value": [
+                                                  {
+                                                    "value": [
+                                                      {
+                                                        "value": "default_value"
+                                                      },
+                                                      {
+                                                        "key": 4,
+                                                        "value": 21
+                                                      },
+                                                      {
+                                                        "value": [
+                                                          {
+                                                            "key": "id",
+                                                            "value": "two"
+                                                          },
+                                                          {
+                                                            "key": "pattern",
+                                                            "value": [
+                                                              {
+                                                                "key": "text_element",
+                                                                "value": "Value"
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR Missing selector"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 24
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "missing-selector =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    {\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "       *[key] Value\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    }\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR Missing line end after variant list"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 43
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "missing-line-end =\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "    { $sel ->\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "        *[key] Value}\n"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,2092 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Function names"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 17
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "valid-func-name-01"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN1"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "valid-func-name-02"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN_FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "valid-func-name-03"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN-FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK 0 is not a valid Identifier start"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 40
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "invalid-func-name-01 = {0FUN()}\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK Function names may not be lowercase"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 42
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Invalid function name: fun.\nFunction names must be all upper-case ASCII letters.\n"
+            }
+          },
+          {
+            "key": "content",
+            "value": "invalid-func-name-02 = {fun()}\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK Function names may not contain lowercase character"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 57
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Invalid function name: Fun.\nFunction names must be all upper-case ASCII letters.\n"
+            }
+          },
+          {
+            "key": "content",
+            "value": "invalid-func-name-03 = {Fun()}\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "JUNK ? is not a valid Identifier character"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 44
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "invalid-func-name-04 = {FUN?()}\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Arguments"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "positional-args"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 1,
+                                "value": 24
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "key": "string_literal",
+                            "value": "a"
+                          },
+                          {
+                            "key": "message_reference",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "msg"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "named-args"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 1,
+                                    "value": 22
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "y"
+                              },
+                              {
+                                "key": "string_literal",
+                                "value": "Y"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "dense-named-args"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 1,
+                                    "value": 27
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "y"
+                              },
+                              {
+                                "key": "string_literal",
+                                "value": "Y"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "mixed-args"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 1,
+                                "value": 19
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "key": "string_literal",
+                            "value": "a"
+                          },
+                          {
+                            "key": "message_reference",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "msg"
+                              }
+                            ]
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 1,
+                                    "value": 35
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "y"
+                              },
+                              {
+                                "key": "string_literal",
+                                "value": "Y"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR Positional arg must not follow keyword args"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 51
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Positional arguments must not follow named arguments."
+            }
+          },
+          {
+            "key": "content",
+            "value": "shuffled-args = {FUN(1, x: 1, \"a\", y: \"Y\", msg)}\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "ERROR Named arguments must be unique"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 38
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Named arguments must be unique."
+            }
+          },
+          {
+            "key": "content",
+            "value": "duplicate-named-args = {FUN(x: 1, x: \"X\")}\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Whitespace around arguments"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 30
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "sparse-inline-call"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "string_literal",
+                            "value": "a"
+                          },
+                          {
+                            "key": "message_reference",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "msg"
+                              }
+                            ]
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 1,
+                                    "value": 46
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "empty-inline-call"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "multiline-call"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "string_literal",
+                            "value": "a"
+                          },
+                          {
+                            "key": "message_reference",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "msg"
+                              }
+                            ]
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 4,
+                                    "value": 12
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "sparse-multiline-call"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "string_literal",
+                            "value": "a"
+                          },
+                          {
+                            "key": "message_reference",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "msg"
+                              }
+                            ]
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 5,
+                                    "value": 14
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "empty-multiline-call"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "unindented-arg-number"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 2,
+                                "value": 1
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "unindented-arg-string"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "string_literal",
+                            "value": "a"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "unindented-arg-msg-ref"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "message_reference",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "msg"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "unindented-arg-term-ref"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "term_reference",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "msg"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "unindented-arg-var-ref"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "variable_reference",
+                            "value": [
+                              {
+                                "value": "id"
+                              },
+                              {
+                                "value": "var"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "unindented-arg-call"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "function_reference",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "OTHER"
+                              },
+                              {
+                                "key": "call_arguments",
+                                "value": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "unindented-named-arg"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 2,
+                                    "value": 3
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "unindented-closing-paren"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "message_reference",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Optional trailing comma"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 26
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "one-argument"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 1,
+                                "value": 21
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "many-arguments"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 1,
+                                "value": 23
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 1,
+                                "value": 26
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 2
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 1,
+                                "value": 29
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 3
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "inline-sparse-args"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 1,
+                                "value": 29
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 1,
+                                "value": 33
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 2
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 1,
+                                "value": 37
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 3
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "mulitline-args"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 2,
+                                "value": 9
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 3,
+                                "value": 9
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 2
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "mulitline-sparse-args"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 3,
+                                "value": 9
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "value": [
+                              {
+                                "value": "int_value"
+                              },
+                              {
+                                "key": 5,
+                                "value": 9
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": 2
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Syntax errors for trailing comma"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "one-argument = {FUN(1,,)}\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "missing-arg = {FUN(,)}\n"
+          }
+        ]
+      },
+      {
+        "key": "junk",
+        "value": [
+          {
+            "key": "annotation",
+            "value": {
+              "message": "Parsing error - \"expected comment line while processing comment inside entry\""
+            }
+          },
+          {
+            "key": "content",
+            "value": "missing-sparse-arg = {FUN(   ,   )}\n"
+          }
+        ]
+      },
+      {
+        "key": "comment",
+        "value": [
+          {
+            "key": "content",
+            "value": "Whitespace in named arguments"
+          },
+          {
+            "key": "span",
+            "value": [
+              {
+                "value": 0
+              },
+              {
+                "value": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "sparse-named-arg"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 2,
+                                    "value": 17
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "y"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 3,
+                                    "value": 17
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 2
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "z"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 6,
+                                    "value": 9
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 3
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "unindented-colon"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 3,
+                                    "value": 2
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "unindented-value"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "function_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "FUN"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "x"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 3,
+                                    "value": 1
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

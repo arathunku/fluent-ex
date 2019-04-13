@@ -1,0 +1,296 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "term",
+        "value": [
+          {
+            "key": "id",
+            "value": "term"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "select_expression"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "variable_reference",
+                        "value": [
+                          {
+                            "value": "id"
+                          },
+                          {
+                            "value": "arg"
+                          }
+                        ]
+                      },
+                      {
+                        "key": "variant_list",
+                        "value": [
+                          {
+                            "value": [
+                              {
+                                "value": "default_value"
+                              },
+                              {
+                                "key": 2,
+                                "value": 14
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "key": "id",
+                                    "value": "key"
+                                  },
+                                  {
+                                    "key": "pattern",
+                                    "value": [
+                                      {
+                                        "key": "text_element",
+                                        "value": "Value"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key01"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "term_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "term"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key02"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "term_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "term"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key03"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "term_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "term"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "arg"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 1,
+                                    "value": 22
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key04"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "term_reference"
+                  },
+                  {
+                    "value": [
+                      {
+                        "key": "id",
+                        "value": "term"
+                      },
+                      {
+                        "key": "call_arguments",
+                        "value": [
+                          {
+                            "key": "string_literal",
+                            "value": "positional"
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "narg1"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 1,
+                                    "value": 38
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "key": "named_argument",
+                            "value": [
+                              {
+                                "key": "id",
+                                "value": "narg2"
+                              },
+                              {
+                                "value": [
+                                  {
+                                    "value": "int_value"
+                                  },
+                                  {
+                                    "key": 1,
+                                    "value": 48
+                                  },
+                                  {
+                                    "value": [
+                                      {
+                                        "value": 2
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

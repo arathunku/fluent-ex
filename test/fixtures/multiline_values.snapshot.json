@@ -1,0 +1,351 @@
+[
+  {
+    "key": "resource",
+    "value": [
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key01"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "A multiline value\ncontinued on the next line\n\nand also down here."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key02"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "\nA multiline value starting\non a new line."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key03"
+          },
+          {
+            "key": "attribute",
+            "value": [
+              {
+                "key": "id",
+                "value": "attr"
+              },
+              {
+                "key": "pattern",
+                "value": [
+                  {
+                    "key": "text_element",
+                    "value": "A multiline attribute value\ncontinued on the next line\n\nand also down here."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key04"
+          },
+          {
+            "key": "attribute",
+            "value": [
+              {
+                "key": "id",
+                "value": "attr"
+              },
+              {
+                "key": "pattern",
+                "value": [
+                  {
+                    "key": "text_element",
+                    "value": "\nA multiline attribute value\nstaring on a new line"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key05"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "\n\nA multiline value with non-standard\n\nindentation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key06"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "\nA multiline value with "
+              },
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "placeables"
+                  }
+                ]
+              },
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "at"
+                  }
+                ]
+              },
+              {
+                "key": "text_element",
+                "value": " the beginning and the end"
+              },
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "of lines"
+                  }
+                ]
+              },
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key07"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "A multiline value"
+                  }
+                ]
+              },
+              {
+                "key": "text_element",
+                "value": " starting and ending "
+              },
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "with a placeable"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key08"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "Leading and trailing whitespace."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key09"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "zero\nthree\ntwo\none\nzero"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key10"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "\ntwo\nzero\nfour"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key11"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "\n\n\ntwo\nzero"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key12"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "."
+                  }
+                ]
+              },
+              {
+                "key": "text_element",
+                "value": "\nfour"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "message",
+        "value": [
+          {
+            "key": "id",
+            "value": "key13"
+          },
+          {
+            "key": "pattern",
+            "value": [
+              {
+                "key": "text_element",
+                "value": "\nfour"
+              },
+              {
+                "key": "placeable",
+                "value": [
+                  {
+                    "value": "string_literal"
+                  },
+                  {
+                    "value": "."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
